@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="main">
+            
+            <div id="canvas-wrapper">
+                <canvas id="canvas"></canvas>
+                <div id="mask" class="invisible"></div>
+            </div>
+            <div class="notation-container">
+                <label for="fen">FEN: </label>
+                <input type="text" class="notation-output" id="fen" readonly>
+            </div>
+            <div class="notation-container">
+                <label for="pgn">PGN: </label>
+                <textarea class="notation-output" id="pgn" readonly wrap="hard"></textarea>
+            </div>
+        </div>
+        <div id="history-moves"></div>
+    </div>
+</body>
+</html>
